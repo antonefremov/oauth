@@ -1,0 +1,9 @@
+---
+applications:
+ - name: hello-oauth-world
+   memory: 512M
+   instances: 1
+   buildpack: java_buildpack
+   path: target/helloauthworld-0.0.1-SNAPSHOT.jar
+   services:
+     - xsuaa-default
